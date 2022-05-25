@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -empty -type f,d | cut -d / -f 2-3
+find . -maxdepth 1 -empty -type f,d | cut -d / -f 2
