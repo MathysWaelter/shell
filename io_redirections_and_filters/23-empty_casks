@@ -1,2 +1,2 @@
 #!/bin/bash
-ls * -la  
+find . -maxdepth 1 -empty -type f,d | cut -r "./"
