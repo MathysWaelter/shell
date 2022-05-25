@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -type f,d | cut -d / -f 2
+find . -empty -printf "%f/n"
