@@ -1,2 +1,2 @@
 #!/bin/bash
-find ./ -type f -type d -empty -ls
+find / -name ".*" -type f -type d  
