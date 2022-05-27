@@ -1,2 +1,2 @@
 #!/bin/bash
-egrep -x ^\d*[13579]$
+paste - - | cut -f 1
