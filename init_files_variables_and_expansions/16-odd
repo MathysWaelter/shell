@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -n "^\d*[13579]$"
+egrep -x ^\d*[13579]$
