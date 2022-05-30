@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#I will make a loop of 20 lines and insert a condition
+i=0
+while [ $i -ne 20 ];
+do
+	(( i++ ))
+	case $i in 
+		"5" )
+			echo "bad luck from china" 
+			echo "$i"
+			;;
+		"10" ) 
+			echo "bad luck from japan"
+			echo "$i"
+			;;
+		"18" ) 
+			echo "bad luck from italy"
+			echo "$i"
+			;;
+		* )
+			echo "$i"
+			;;	
+		esac;
+	done
