@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#I display content of passwd
+while IFS= read -r username password userid groupid homedir; 
+do
+        echo "$username $password $userid $groupid $homedir "
+done > /etc/passwd
