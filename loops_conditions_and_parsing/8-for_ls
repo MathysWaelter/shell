@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-#I will make a script for list directory 
-x=0
-for x in * ; do
-    echo "$x" && ls -1 
-    break
+#I will make a script for list directory
+for x in * ;
+	do
+    	echo "$x" | cut -d "-" -f2  
+    
 done
