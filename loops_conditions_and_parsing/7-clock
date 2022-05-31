@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#I will make a loop of for print an hours : "12 hours and 59 minutes"
+h=0
+m=0
+      echo "Hour: $h"
+while [ $h -ne 13 ]
+    do 
+  ((m++))
+    if [[ "$m" == '60' ]]; then
+   ((h++))
+    m=0 
+     if [[ "$h" != '13' ]]; then
+      echo "Hour: $h"
+    fi
+  
+    else 
+      echo $m
+    fi
+done
