@@ -24,7 +24,7 @@ restart)
    echo "manage_my_process restarted"
    ;;
 *)
-   echo "Usage: $0 {start|stop|restart}"
+   echo "Usage: manage_my_process {start|stop|restart}"
 esac
 
 exit 0 
