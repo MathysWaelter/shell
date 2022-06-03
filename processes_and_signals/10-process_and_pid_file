@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Create , diplay and signal
-echo /var/run/myscript.pid
+touch /var/run/myscript.pid
 while true 
 	do 
 	echo "To infinity and beyond"
