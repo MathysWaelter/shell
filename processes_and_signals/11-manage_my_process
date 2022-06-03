@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#Script with (start, restart, stop)
+i=$(pgrep -f "manage_my_process")
+start(i) {
+	touch "/var/run/my_process.pid"
+}
+
+stop(i) {
+	rm "/var/run/my_process.pid"
+}
+
+restart(i) {
+	rm "/var/run/my_process.pid"
+	touch "/var/run/my_process.pid"
+	echo "manage_my_process restarted"
+}
+
