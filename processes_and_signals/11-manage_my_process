@@ -9,12 +9,12 @@ start)
    ;;
 stop)
    echo "manage_my_process stopped"
-   pkill manage_my_process 
+   pkill ./manage_my_process 
    rm /var/run/my_process.pid
    ;;
 restart)
    echo "manage_my_process restarted"
-   pkill manage_my_process 
+   pkill ./manage_my_process 
    rm /var/run/my_process.pid
    ./manage_my_process &
    echo $!>/var/run/my_process.pid
